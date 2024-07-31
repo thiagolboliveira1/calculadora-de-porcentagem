@@ -1,1 +1,40 @@
-<p>calculator works!</p>
+<div class="container">
+  <h1>Calculadora de Comissão</h1>
+  <form (ngSubmit)="calcularComissao()">
+    <div class="form-group" >
+      <label for="valorTotal">Valor Total (R$): somente números</label>
+
+      <input type="number"
+       id="valorTotal"
+       [(ngModel)]="valorTotal"
+        name="valorTotal"  class="form-control" required>
+
+
+    </div>
+    <div class="form-group">
+      <label for="percentualComissao">Percentual de Comissão (%):</label>
+      <input type="number" id="percentualComissao" [(ngModel)]="percentualComissao" name="percentualComissao" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Calcular</button>
+  </form>
+  <div *ngIf="comissao !== null">
+    <h2>Valor Total: {{ valorTotal | currency:'BRL':'symbol':'1.2-2' }}</h2>
+    <h2>Percentual de Comissão: {{ percentualComissao }}%</h2>
+    <h2>Valor da Comissão: {{ comissao | currency:'BRL':'symbol':'1.2-2' }}</h2>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2024 Thiago Oliveira. Todos os direitos reservados.</p>
+    
+    <ul class="social-links">
+      <li><a href="https://www.facebook.com/reel/839314151424608" target="_blank" title="Facebook">Facebook</a></li>
+      <li><a href="https://github.com/thiagolboliveira1" target="_blank" title="Twitter">GitHub</a></li>
+      <li><a href="#" target="_blank" title="Instagram">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/thiago-oliveira-668367232/" target="_blank" title="LinkedIn">linkedin</a></li>
+    </ul>
+  </div>
+</footer>
+

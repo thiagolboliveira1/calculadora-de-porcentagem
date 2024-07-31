@@ -1,0 +1,100 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: linear-gradient(to top, white, rgba(0, 0, 0, 0.486));
+  min-height: 100vh; /* Garante que o footer ficará na parte inferior da tela */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 0.7rem;
+  line-height: 0px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.btn {
+  width: 58%;
+  padding: 10px;
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Footer Container */
+footer {
+  background-color: #303030; /* Cor de fundo do footer */
+  color: #ffffff; /* Cor do texto */
+  text-align: end; /* Alinha o texto ao centro */
+  padding: 20px 0; /* Espaçamento interno */
+  position: relative; /* Posicionamento para suporte ao posicionamento absoluto dos elementos dentro do footer */
+  bottom: 0; /* Fixa o footer no fundo da página */
+  width: 100%; /* Largura total da página */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para o footer */
+  text-align: center;
+}
+
+/* Links dentro do footer */
+footer a {
+  color: #61dafb; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Sublinha os links ao passar o mouse */
+}
+
+/* Conteúdo do footer */
+.footer-content {
+  max-width: 1200px; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 20px; /* Espaçamento interno lateral */
+}
+
+.footer-content p {
+  margin: 0; /* Remove a margem do parágrafo */
+}
+
+/* Links de redes sociais */
+.social-links {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o padding da lista */
+  margin: 10px 0; /* Margem acima e abaixo dos links */
+}
+
+.social-links li {
+  display: inline; /* Exibe os itens da lista na horizontal */
+  margin: 0 10px; /* Espaçamento lateral entre os itens */
+}
+
+.social-links a {
+  font-size: 10px; /* Tamanho da fonte dos ícones de redes sociais */
+  color: #61dafb; /* Cor dos ícones de redes sociais */
+}
+
+.social-links a:hover {
+  color: #ffffff; /* Cor dos ícones ao passar o mouse */
+}
